@@ -39,4 +39,4 @@ Este projeto tem com o principal foco, previsão das notas finais dos alunos com
 
 
 <h3> Equipe kaggle </h3>
-![image](https://user-images.githubusercontent.com/48967037/163870930-8be0a410-fe9d-40fc-8267-f3776512a498.png)
+![image](https://user-images.githubusercontent.com/48967037/163870992-b65b0203-0785-4fce-bbe6-18553b00605d.png)
