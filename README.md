@@ -8,8 +8,7 @@ Finalizado
 
 <h3> Sobre o projeto </h3>
 
-Este projeto tem com o principal foco a análize de dados gerados através do ENEM. 
-
+Este projeto tem com o principal foco, previsão das notas finais dos alunos com base na análize de dados gerados através da realização do ENEM.
 
 <h3> Colaboradores  </h3>
 
