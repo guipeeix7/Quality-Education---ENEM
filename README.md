@@ -11,8 +11,6 @@ Finalizado
 Este projeto tem com o principal foco, previsão das notas finais dos alunos com base na análize de dados gerados através da realização do ENEM.
 
 <h3> Colaboradores  </h3>
-
-
 <table>
   
   <tr>
@@ -37,6 +35,3 @@ Este projeto tem com o principal foco, previsão das notas finais dos alunos com
     
 </table>
 
-
-<h3> Equipe kaggle </h3>
-![image](https://user-images.githubusercontent.com/48967037/163870992-b65b0203-0785-4fce-bbe6-18553b00605d.png)
