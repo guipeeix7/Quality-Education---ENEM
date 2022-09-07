@@ -1,0 +1,130 @@
+#map {
+	display: none;
+	.state {
+		cursor: pointer;
+		.shape {
+			cursor: pointer;
+			-width: 0;
+		}
+		.label_icon_state {
+			fill: #fff;
+			font-family: Arial;
+			font-size: 11px;
+			line-height: 12px;
+			font-weight: normal;
+		}
+		.label_state {
+			display: none;
+			font-family: Arial;
+			font-size: 14px;
+			line-height: 16px;
+			font-weight: bold;
+		}
+		&:hover {
+			.label_state {
+				display: block;
+			}
+		}
+	}
+	.state.hover {
+		.label_state {
+			display: block;
+		}
+	}
+	.model-green {
+		.state {
+			.shape {
+				fill: #6cb361;
+			}
+			.icon_state {
+				fill: #10592f;
+			}
+			.label_icon_state {
+				fill: #fff;
+			}
+			.label_state {
+				fill: #666;
+			}
+			&:hover {
+				.shape {
+					fill: #2d68b2;
+				}
+				.icon_state {
+					fill: #5a95ce;
+				}
+			}
+		}
+		.state.hover {
+			.shape {
+				fill: #2d68b2;
+			}
+			.icon_state {
+				fill: #5a95ce;
+			}
+		}
+	}
+	.model-orange {
+		.state {
+			.shape {
+				fill: #fd7132;
+			}
+			.icon_state {
+				fill: #6cb361;
+			}
+			.label_icon_state {
+				fill: #fff;
+			}
+			.label_state {
+				fill: #666;
+			}
+			&:hover {
+				.shape {
+					fill: #c93f04;
+				}
+				.icon_state {
+					fill: #10592f;
+				}
+			}
+		}
+		.state.hover {
+			.shape {
+				fill: #c93f04;
+			}
+			.icon_state {
+				fill: #10592f;
+			}
+		}
+	}
+	.model-darkgreen {
+		.state {
+			.shape {
+				fill: #366823;
+			}
+			.icon_state {
+				fill: #2779c6;
+			}
+			.label_icon_state {
+				fill: #fff;
+			}
+			.label_state {
+				fill: #666;
+			}
+			&:hover {
+				.shape {
+					fill: #4a8c31;
+				}
+				.icon_state {
+					fill: #5a95ce;
+				}
+			}
+		}
+		.state.hover {
+			.shape {
+				fill: #4a8c31;
+			}
+			.icon_state {
+				fill: #5a95ce;
+			}
+		}
+	}
+}

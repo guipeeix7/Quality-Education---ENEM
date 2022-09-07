@@ -1,0 +1,147 @@
+<section id="State">
+  <div class="card">
+    <div class="card-header text-center">
+      <h2 class="text-grey text-uppercase">{{sigla}}</h2>
+      <p class="text-grey">Nota média ponderada: <b>{{ AvarageNote }} pontos</b> </p>
+    </div>
+
+    <div class="card-body">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 align-self-center">
+          <div class="text-center">
+            <img
+              loading="lazy"
+              class="aligncenter wp-image-170159"
+              src="https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-distrito-federal-600x420.png"
+              alt=""
+              width="399"
+              height="279"
+              srcset="
+                https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-distrito-federal-600x420.png   600w,
+                https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-distrito-federal-1000x700.png 1000w,
+                https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-distrito-federal-768x538.png   768w,
+                https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-distrito-federal-125x88.png    125w,
+                https://www.infoescola.com/wp-content/uploads/2021/02/bandeira-distrito-federal.png          1280w
+              "
+              sizes="(max-width: 399px) 100vw, 399px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Data">
+  <div class="card mb-12">
+    <div class="card-header text-center">
+      <h2 class="text-grey">Dados</h2>
+    </div>
+    <div class="card-body">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 align-self-center">
+          <div class="text-center">
+            <h4>Tipos de provas</h4>
+          </div>
+          <div style="display: block">
+            <canvas
+              baseChart
+              [data]="doughnutChartDataTypeTest"
+              [labels]="doughnutChartLabelsTypeTest"
+              [chartType]="doughnutChartTypeTypeTest"
+            >
+            </canvas>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 align-self-center">
+          <div class="text-center">
+            <h4>Identidade racial</h4>
+          </div>
+          <div style="display: block">
+            <canvas
+              baseChart
+              [data]="doughnutChartDataRacialIdentity"
+              [labels]="doughnutChartLabelsRacialIdentity"
+              [chartType]="doughnutChartTypeRacialIdentity"
+            >
+            </canvas>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-12">
+          <canvas
+            baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [plugins]="barChartPlugins"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+          >
+            [colors] = "color"
+          </canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="citiesList">
+  <div class="card">
+    <div class="card-header text-center">
+      <h2 class="text-grey">Cidades</h2>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="table-responsive text-center">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Média</th>
+                  <th>Número de concurseiros</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href=""> Niger </a></td>
+                  <td>Oud-Turnhout</td>
+                  <td>Oud-Turnhout</td>
+                </tr>
+                <tr>
+                  <td>Curaçao</td>
+                  <td>Curaçao</td>
+                  <td>Sinaai-Waas</td>
+                </tr>
+                <tr>
+                  <td>Netherlands</td>
+                  <td>Baileux</td>
+                  <td>Baileux</td>
+                </tr>
+                <tr>
+                  <td>Korea, South</td>
+                  <td>Overland Park</td>
+                  <td>Overland Park</td>
+                </tr>
+                <tr>
+                  <td>Malawi</td>
+                  <td>Feldkirchen in Kärnten</td>
+                  <td>Feldkirchen in Kärnten</td>
+                </tr>
+                <tr>
+                  <td>Chile</td>
+                  <td>Gloucester</td>
+                  <td>Gloucester</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
