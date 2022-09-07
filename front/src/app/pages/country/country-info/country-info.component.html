@@ -1,0 +1,204 @@
+<div class="card">
+  <div class="card-body mb-3">
+    <div class="card-header">
+      <h2 class="text-grey">Dados</h2>
+    </div>
+    <hr />
+    <div class="bd-example bd-example-tabs">
+      <div class="row">
+        <div class="col-3">
+          <div
+            class="nav flex-column nav-pills"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <nsp class="nspellk" *ngFor="let tab of infoTabs" index="{{ tab }}">
+              <a
+                class="nav-link"
+                (click)="selectedInforBars = tab"
+                [ngClass]="selectedInforBars === tab ? 'active' : ''"
+                aria-selected=""
+              >
+                {{ tab }}
+              </a>
+            </nsp>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div
+              [ngClass]="selectedInforBars === infoTabs[0] ? 'active show' : ''"
+              class="tab-pane fade"
+              id="Nota geral"
+              role="tabpanel"
+            >
+              <canvas
+                baseChart
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [colors]="colors"
+                [chartType]="barChartType"
+              >
+              </canvas>
+            </div>
+            <div
+              [ngClass]="selectedInforBars === infoTabs[1] ? 'active show' : ''"
+              class="tab-pane fade"
+              id="Por raça"
+              role="tabpanel"
+            >
+              <canvas
+                baseChart
+                [datasets]="barChartDatab2"
+                [labels]="barChartLabelsb2"
+                [options]="barChartOptionsb2"
+                [colors]="colorsb2"
+                [chartType]="barChartTypeb2"
+              >
+              </canvas>
+              <br>
+              <hr>
+              <canvas
+                baseChart
+                [datasets]="barChartData2"
+                [labels]="barChartLabels2"
+                [options]="barChartOptions2"
+                [colors]="colors2"
+                [chartType]="barChartType2"
+              >
+              </canvas>
+
+            </div>
+            <div
+              [ngClass]="selectedInforBars === infoTabs[2] ? 'active show' : ''"
+              class="tab-pane fade"
+              id="Relacionamento"
+              role="tabpanel"
+            >
+              <canvas
+                baseChart
+                [datasets]="barChartDatab3"
+                [labels]="barChartLabelsb3"
+                [options]="barChartOptionsb3"
+                [colors]="colorsb3"
+                [chartType]="barChartTypeb3"
+              >
+              </canvas>
+              <br>
+              <hr>
+              <canvas
+                baseChart
+                [datasets]="barChartData3"
+                [labels]="barChartLabels3"
+                [options]="barChartOptions3"
+                [colors]="colors3"
+                [chartType]="barChartType3"
+              >
+              </canvas>
+            </div>
+            <div
+              [ngClass]="selectedInforBars === infoTabs[3] ? 'active show' : ''"
+              class="tab-pane fade"
+              id="Tipo de escola"
+              role="tabpanel"
+            >
+              <canvas
+                baseChart
+                [datasets]="barChartDatab4"
+                [labels]="barChartLabelsb4"
+                [options]="barChartOptionsb4"
+                [colors]="colorsb4"
+                [chartType]="barChartTypeb4"
+              >
+              </canvas>
+              <br>
+              <hr>
+              <canvas
+                baseChart
+                [datasets]="barChartData4"
+                [labels]="barChartLabels4"
+                [options]="barChartOptions4"
+                [colors]="colors4"
+                [chartType]="barChartType4"
+              >
+              </canvas>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="Escola e Raça"
+              role="tabpanel"
+              [ngClass]="selectedInforBars === infoTabs[4] ? 'active show' : ''"
+            >
+              <h4> Não responderam </h4>
+                <canvas
+                  baseChart
+                  [datasets]="barChartData5"
+                  [labels]="barChartLabels5"
+                  [options]="barChartOptions5"
+                  [colors]="colors5"
+                  [chartType]="barChartType5"
+                >
+                </canvas>
+
+                <canvas
+                  baseChart
+                  [datasets]="barChartData5a"
+                  [labels]="barChartLabels5a"
+                  [options]="barChartOptions5a"
+                  [colors]="colors5a"
+                  [chartType]="barChartType5a"
+                >
+                </canvas>
+              <hr>
+
+              <h4> Pública </h4>
+                  <canvas
+                  baseChart
+                  [datasets]="barChartData5b1"
+                  [labels]="barChartLabels5b1"
+                  [options]="barChartOptions5b1"
+                  [colors]="colors5b1"
+                  [chartType]="barChartType5b1"
+                >
+                </canvas>
+
+                <canvas
+                  baseChart
+                  [datasets]="barChartData5b2"
+                  [labels]="barChartLabels5b2"
+                  [options]="barChartOptions5b2"
+                  [colors]="colors5b2"
+                  [chartType]="barChartType5b2"
+                >
+                </canvas>
+              <hr>
+              <h4> Privada </h4>
+                  <canvas
+                  baseChart
+                  [datasets]="barChartData5c1"
+                  [labels]="barChartLabels5c1"
+                  [options]="barChartOptions5c1"
+                  [colors]="colors5c1"
+                  [chartType]="barChartType5c1"
+                >
+                </canvas>
+
+                <canvas
+                  baseChart
+                  [datasets]="barChartData5c2"
+                  [labels]="barChartLabels5c2"
+                  [options]="barChartOptions5c2"
+                  [colors]="colors5c2"
+                  [chartType]="barChartType5c2"
+                >
+                </canvas>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
