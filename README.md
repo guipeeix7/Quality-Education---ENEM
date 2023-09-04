@@ -19,7 +19,7 @@ Este projeto tem com o principal foco, previsão das notas finais dos alunos com
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://media-exp1.licdn.com/dms/image/C5603AQF4PqlnmpNL-Q/profile-displayphoto-shrink_800_800/0/1644373572662?e=1668038400&v=beta&t=aG0boLwjDDzyAofKHslyyydREsRNT5Rxqo1hCLWfR9k" width="100px;" alt="Foto do Pinna"/><br>
+        <img src="https://media.licdn.com/dms/image/D4D03AQFtbuPWGER6VA/profile-displayphoto-shrink_100_100/0/1692881965462?e=1699488000&v=beta&t=zRuSSRRotMFgqR8P2A1M8wL3U8HwouZxJJGPrSsUJAY" width="100px;" alt="Foto do Pinna"/><br>
         <sub>
           <b>Matheus Pina</b>
         </sub>
